@@ -4,14 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>İlgi Alanlarım | Beyza Koyun</title>
-    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Harici CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Navigasyon Menüsü -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
             <a class="navbar-brand" href="index.html">Beyza</a>
@@ -34,7 +31,6 @@
             <p class="lead">Bu sayfadaki veriler anlık olarak iTunes API servisi üzerinden çekilmektedir.</p>
         </header>
 
-        <!-- API'den gelen 4 verinin listeleneceği alan -->
         <div class="row" id="api-sonuclari">
             <div class="col-12 text-center" id="yukleniyor">
                 <div class="spinner-border text-primary" role="status">
@@ -49,28 +45,20 @@
         <p>&copy; 2026 Beyza Koyun - Tüm Hakları Saklıdır.</p>
     </footer>
 
-    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     
-    <!-- API Entegrasyonu İçin Native JavaScript -->
     <script>
         document.addEventListener("DOMContentLoaded", function() {
-            // iTunes API'sine istek atıyoruz (limit=4 ile tam 4 tane getiriyoruz)
-            // "coldplay" yazan yeri kendi sevdiğin bir sanatçıyla değiştirebilirsin.
             fetch('https://itunes.apple.com/search?term=coldplay&entity=album&limit=4')
                 .then(response => response.json())
                 .then(data => {
                     const sonucAlani = document.getElementById('api-sonuclari');
-                    sonucAlani.innerHTML = ''; // Yükleniyor yazısını temizle
-
-                    // Gelen 4 veriyi döngüye alıp HTML kartları oluşturuyoruz
+                    sonucAlani.innerHTML = '';
                     data.results.forEach(album => {
-                        // iTunes resimleri normalde küçük gelir, sayfada net durması için büyütüyoruz
                         const resim = album.artworkUrl100.replace('100x100bb', '300x300bb');
                         const sanatci = album.artistName;
                         const albumAdi = album.collectionName;
                         const tur = album.primaryGenreName;
-                        
                         const kart = `
                             <div class="col-md-3 mb-4">
                                 <div class="card h-100 shadow-sm border-0">

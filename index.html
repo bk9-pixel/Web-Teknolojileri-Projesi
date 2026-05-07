@@ -4,134 +4,84 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hakkında | Beyza Koyun</title>
-    <!-- Bootstrap CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
-    <!-- Harici CSS -->
     <link rel="stylesheet" href="style.css" />
   </head>
   <body class="bg-light d-flex flex-column min-vh-100">
-    <!-- Navigasyon Menüsü -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container">
         <a class="navbar-brand" href="index.html">Beyza</a>
         <div class="collapse navbar-collapse">
           <ul class="navbar-nav ms-auto">
-            <!-- 'active' sınıfı bu sayfada (Hakkında) -->
-            <li class="nav-item">
-              <a class="nav-link active" href="index.html">Hakkında</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="ozgecmis.html">Özgeçmiş</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="sehrim.html">Şehrim</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="ilgialanlarim.html">İlgi Alanlarım</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="iletisim.html">İletişim</a>
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link btn btn-primary text-white ms-lg-2"
-                href="login.php"
-                >Giriş Yap</a
-              >
-            </li>
+            <li class="nav-item"><a class="nav-link active" href="index.html">Hakkında</a></li>
+            <li class="nav-item"><a class="nav-link" href="ozgecmis.html">Özgeçmiş</a></li>
+            <li class="nav-item"><a class="nav-link" href="sehrim.html">Şehrim</a></li>
+            <li class="nav-item"><a class="nav-link" href="ilgialanlarim.html">İlgi Alanlarım</a></li>
+            <li class="nav-item"><a class="nav-link" href="iletisim.html">İletişim</a></li>
+            <li class="nav-item"><a class="nav-link btn btn-primary text-white ms-lg-2" href="login.php">Giriş Yap</a></li>
           </ul>
         </div>
       </div>
     </nav>
 
-    <!-- Karşılama Alanı (Hero Section) -->
     <header class="text-white text-center py-5 shadow-sm" style="background: linear-gradient(to right, #141e30, #071321);">
       <div class="container py-4">
-        <img
-          src="img/su.jpeg"
-          alt="Beyza Koyun"
-          class="rounded-circle mb-3 border border-4 border-white shadow"
-          style="width: 150px; height: 150px; object-fit: cover"
-        />
+        <img src="img/su.jpeg" alt="Beyza Koyun" class="rounded-circle mb-3 border border-4 border-white shadow" style="width: 150px; height: 150px; object-fit: cover" />
         <h1 class="display-4 fw-bold">Merhaba, Ben Beyza Koyun!</h1>
-        <p class="lead mb-0">
-          Sakarya Üniversitesi | Bilgisayar Mühendisliği Öğrencisi
-        </p>
+        <p class="lead mb-0">Sakarya Üniversitesi | Bilgisayar Mühendisliği Öğrencisi</p>
       </div>
     </header>
 
-    <!-- Hakkımda İçeriği -->
     <main class="container my-5 flex-grow-1">
-      <div class="row align-items-center mb-5">
-        <!-- Sol Metin Alanı -->
+      <section class="row align-items-center mb-5">
         <div class="col-md-7 mb-4 mb-md-0 px-md-4">
-          <h2 class="text-primary border-bottom border-primary pb-2 mb-4">
-            Hakkımda
-          </h2>
+          <h2 class="text-primary border-bottom border-primary pb-2 mb-4">Hakkımda</h2>
           <p class="lead" style="font-size: 1.15rem">
-            Sakarya Üniversitesi'nde Bilgisayar Mühendisliği 1. sınıf
-            öğrencisiyim. Yazılım dünyasına olan merakım ve teknolojiyle iç içe
-            olma tutkum beni bu yola sürükledi.
+            Sakarya Üniversitesi'nde Bilgisayar Mühendisliği 1. sınıf öğrencisiyim. Yazılım dünyasına olan merakım ve teknolojiyle iç içe olma tutkum beni bu yola sürükledi.
           </p>
           <p class="text-muted">
-            Öğrenim hayatım boyunca C++, C#, Python gibi dillerde yetkinlik
-            kazanırken, aynı zamanda modern web teknolojileri üzerine projeler
-            geliştiriyorum. Gelecekte, makine öğrenmesi algoritmalarını medikal
-            veri analiziyle birleştirerek insan sağlığına dokunan yenilikçi
-            çözümler üretmeyi hedefliyorum.
+            Öğrenim hayatım boyunca C++, C#, Python gibi dillerde yetkinlik kazanırken, aynı zamanda modern web teknolojileri üzerine projeler geliştiriyorum. Gelecekte, makine öğrenmesi algoritmalarını medikal veri analiziyle birleştirerek insan sağlığına dokunan yenilikçi çözümler üretmeyi hedefliyorum.
           </p>
         </div>
-
-        <!-- Sağ Bilgi Kartı -->
         <div class="col-md-5">
           <div class="card bg-white border-0 shadow rounded-4 p-4">
             <h4 class="text-success border-bottom pb-2 mb-3">Kısa Bilgiler</h4>
             <ul class="list-unstyled mb-0 fs-5">
-              <li class="mb-3">
-                🎓 <strong>Eğitim:</strong> Sakarya Üniversitesi
-              </li>
-              <li class="mb-3">
-                💻 <strong>Bölüm:</strong> Bilgisayar Mühendisliği
-              </li>
-              <li class="mb-3">📍 <strong>Konum:</strong> Kocaeli </li>
+              <li class="mb-3">🎓 <strong>Eğitim:</strong> Sakarya Üniversitesi</li>
+              <li class="mb-3">💻 <strong>Bölüm:</strong> Bilgisayar Mühendisliği</li>
+              <li class="mb-3">📍 <strong>Konum:</strong> Kocaeli</li>
               <li class="mb-2">🚀 <strong>Odak:</strong> Web & Yapay Zeka</li>
             </ul>
           </div>
         </div>
-      </div>
+      </section>
 
       <hr class="my-5 border-2">
 
-        <!-- İlgi Alanı / Tanıtım Videosu (Yönerge Zorunluluğu) -->
-        <div class="row align-items-center mb-5">
-            <div class="col-lg-6 mb-4 mb-lg-0">
-                <h3 class="text-primary border-bottom border-primary pb-2 mb-3">Teknoloji ve Sağlık</h3>
-                <p class="text-muted">
-                    Yapay zekanın tıp dünyasındaki devrimsel ilerleyişi her zaman ilgimi çekmiştir. Yandaki video, kariyer hedefim olan bu alanın geleceğine dair harika bir vizyon sunuyor.
-                </p>
-            </div>
-            <div class="col-lg-6">
-                <!-- Bootstrap 5 Responsive Video -->
-                <div class="ratio ratio-16x9 shadow rounded-4 overflow-hidden">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/oB2BIoDwjKc?si=0jdkVI2HevK-MDZb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-            </div>
+      <section class="row align-items-center mb-5">
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <h3 class="text-primary border-bottom border-primary pb-2 mb-3">Teknoloji ve Sağlık</h3>
+          <p class="text-muted">
+            Yapay zekanın tıp dünyasındaki devrimsel ilerleyişi her zaman ilgimi çekmiştir. Yandaki video, kariyer hedefim olan bu alanın geleceğine dair harika bir vizyon sunuyor.
+          </p>
         </div>
+        <div class="col-lg-6">
+          <div class="ratio ratio-16x9 shadow rounded-4 overflow-hidden">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/oB2BIoDwjKc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+        </div>
+      </section>
 
-      <!-- Site İçi Hızlı Yönlendirme Kartları -->
       <h3 class="text-center text-secondary mb-4 mt-5">Site İçeriği</h3>
       <div class="row g-4">
         <div class="col-md-4">
           <div class="card h-100 border-0 shadow-sm rounded-4 text-center p-3">
             <div class="card-body">
               <h4 class="card-title text-primary mb-3">📝 Özgeçmiş</h4>
-              <p class="card-text text-muted mb-4">
-                Akademik hedeflerim ve teknik yeteneklerim hakkında detaylı
-                bilgiye ulaşabilirsiniz.
-              </p>
+              <p class="card-text text-muted mb-4">Akademik hedeflerim ve teknik yeteneklerim hakkında detaylı bilgiye ulaşabilirsiniz.</p>
               <a href="ozgecmis.html" class="btn btn-outline-primary">Göz At</a>
             </div>
           </div>
@@ -140,10 +90,7 @@
           <div class="card h-100 border-0 shadow-sm rounded-4 text-center p-3">
             <div class="card-body">
               <h4 class="card-title text-success mb-3">⛰️ Şehrim</h4>
-              <p class="card-text text-muted mb-4">
-                Memleketim Trabzon'un tarihi, doğası ve kültürel miraslarına
-                dair görseller.
-              </p>
+              <p class="card-text text-muted mb-4">Memleketim Trabzon'un tarihi, doğası ve kültürel miraslarına dair görseller.</p>
               <a href="sehrim.html" class="btn btn-outline-success">Keşfet</a>
             </div>
           </div>
@@ -152,10 +99,7 @@
           <div class="card h-100 border-0 shadow-sm rounded-4 text-center p-3">
             <div class="card-body">
               <h4 class="card-title text-info mb-3">✉️ İletişim</h4>
-              <p class="card-text text-muted mb-4">
-                Bana ulaşmak, soru sormak veya projeler hakkında konuşmak için
-                iletişim formu.
-              </p>
+              <p class="card-text text-muted mb-4">Bana ulaşmak, soru sormak veya projeler hakkında konuşmak için iletişim formu.</p>
               <a href="iletisim.html" class="btn btn-outline-info">Bana Ulaş</a>
             </div>
           </div>
@@ -163,12 +107,10 @@
       </div>
     </main>
 
-    <!-- Footer -->
     <footer class="text-center py-4 bg-dark text-white mt-auto">
       <p class="mb-0">&copy; 2026 Beyza Koyun - Tüm Hakları Saklıdır.</p>
     </footer>
 
-    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
