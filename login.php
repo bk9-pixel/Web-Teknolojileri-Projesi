@@ -12,7 +12,7 @@
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
   </head>
 
-  <body class="bg-light">
+  <body class="d-flex flex-column min-vh-100 theme-login">
     <!-- Navigasyon Menüsü -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container">
@@ -35,7 +35,7 @@
       <div class="row justify-content-center">
         <div class="col-md-5">
           <div class="card shadow border-0 rounded-3">
-            <div class="card-header bg-primary text-white text-center py-3">
+            <div class="card-header text-center py-3 border-bottom">
               <h4 class="mb-0">Öğrenci Girişi</h4>
             </div>
             <div class="card-body p-4">
@@ -76,7 +76,7 @@
       </div>
     </main>
 
-    <footer class="text-center py-4 bg-dark text-white fixed-bottom">
+    <footer class="text-center py-4 bg-dark text-white mt-auto border-top border-dark">
       <p class="mb-0">&copy; 2026 Beyza Koyun - Tüm Hakları Saklıdır.</p>
     </footer>
 

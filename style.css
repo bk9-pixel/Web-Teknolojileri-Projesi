@@ -1,0 +1,270 @@
+:root {
+  --bg-dark-1: #0f172a;
+  /* Koyu lacivert/gri */
+  --bg-dark-2: #334155;
+  /* Daha açık gri/mavi */
+  --accent-purple: #8b5cf6;
+  --accent-green: #0ea5e9;
+  /* Canlı mavi */
+  --text-main: #f8fafc;
+  /* Beyaz metin */
+  --text-muted: #cbd5e1;
+  /* Açık gri metin */
+  --glass-bg: rgba(15, 23, 42, 0.7);
+  /* Koyu yarı saydam */
+  --glass-border: rgba(255, 255, 255, 0.15);
+  /* Hafif beyaz kenarlık */
+}
+
+/* Ana Sayfa Teması (Varsayılan - Lacivert/Mavi) */
+body.theme-index {
+  /* Kök değişkenleri kullanır */
+}
+
+/* Şehrim Teması (Zümrüt/Orman Yeşili) */
+body.theme-sehrim {
+  --bg-dark-1: #b3bab8;
+  --bg-dark-2: #494e4e;
+  --accent-purple: #f3f3f3;
+  --accent-green: #145843;
+  --glass-bg: rgba(6, 78, 59, 0.7);
+}
+
+/* Özgeçmiş Teması (Koyu Mor/Çivit) */
+body.theme-ozgecmis {
+  --bg-dark-1: #312e81;
+  --bg-dark-2: #4c1d95;
+  --accent-purple: #d946ef;
+  --accent-green: #8b5cf6;
+  --glass-bg: rgba(49, 46, 129, 0.7);
+}
+
+/* İlgi Alanlarım Teması (Koyu Kırmızı/Turuncu) */
+body.theme-ilgialanlarim {
+  --bg-dark-1: #450a0a;
+  --bg-dark-2: #7c2d12;
+  --accent-purple: #f43f5e;
+  --accent-green: #f97316;
+  --glass-bg: rgba(69, 10, 10, 0.7);
+}
+
+/* İletişim Teması (Koyu Indigo/Gece Mavisi) */
+body.theme-iletisim {
+  --bg-dark-1: #0f172a;
+  --bg-dark-2: #1e1b4b;
+  --accent-purple: #38bdf8;
+  --accent-green: #6366f1;
+  --glass-bg: rgba(15, 23, 42, 0.7);
+}
+
+/* Giriş Yap Teması (Derin Deniz/Teal) */
+body.theme-login {
+  --bg-dark-1: #083344;
+  --bg-dark-2: #115e59;
+  --accent-purple: #06b6d4;
+  --accent-green: #14b8a6;
+  --glass-bg: rgba(8, 51, 68, 0.7);
+}
+
+body {
+  background: linear-gradient(135deg, var(--bg-dark-1) 0%, var(--bg-dark-2) 100%);
+  background-attachment: fixed;
+  color: var(--text-main);
+  min-height: 100vh;
+  transition: background 0.5s ease;
+}
+
+/* Typography Overrides */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  color: var(--text-main);
+}
+
+/* Navbar Customization */
+.navbar {
+  background: rgba(15, 23, 42, 0.85) !important;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--glass-border);
+}
+
+.navbar-light .navbar-nav .nav-link,
+.navbar-dark .navbar-nav .nav-link {
+  color: var(--text-muted) !important;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link.active {
+  color: var(--accent-green) !important;
+  transform: translateY(-2px);
+}
+
+.navbar-brand {
+  color: var(--text-main) !important;
+}
+
+/* Glassmorphism Cards */
+.card,
+.glass-panel {
+  background: var(--glass-bg) !important;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--glass-border) !important;
+  border-radius: 1rem !important;
+  color: var(--text-main);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 40px rgba(14, 165, 233, 0.2);
+  border-color: rgba(14, 165, 233, 0.4) !important;
+}
+
+.card-title {
+  color: var(--text-main) !important;
+}
+
+.card-text,
+.text-muted {
+  color: var(--text-muted) !important;
+}
+
+/* Text Gradients */
+.text-gradient {
+  background: linear-gradient(45deg, var(--accent-purple), var(--accent-green));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Buttons */
+.btn-primary {
+  background: linear-gradient(45deg, var(--accent-green), var(--accent-purple));
+  border: none;
+  box-shadow: 0 4px 15px rgba(14, 165, 233, 0.4);
+  transition: all 0.3s ease;
+  font-weight: 500;
+  color: #fff !important;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(45deg, var(--accent-purple), var(--accent-green));
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(14, 165, 233, 0.6);
+}
+
+.btn-outline-primary {
+  color: var(--accent-green);
+  border-color: var(--accent-green);
+}
+
+.btn-outline-primary:hover {
+  background: var(--accent-green);
+  color: #fff;
+  box-shadow: 0 0 15px rgba(14, 165, 233, 0.4);
+  border-color: var(--accent-green);
+}
+
+.btn-outline-success {
+  color: #34d399;
+  /* Daha açık yeşil */
+  border-color: #34d399;
+}
+
+.btn-outline-success:hover {
+  background: #34d399;
+  color: #111827;
+  box-shadow: 0 0 15px rgba(52, 211, 153, 0.4);
+}
+
+.btn-outline-info {
+  color: #38bdf8;
+  border-color: #38bdf8;
+}
+
+.btn-outline-info:hover {
+  background: #38bdf8;
+  color: #111827;
+  box-shadow: 0 0 15px rgba(56, 189, 248, 0.4);
+}
+
+/* Footer */
+footer {
+  background: rgba(15, 23, 42, 0.85) !important;
+  border-top: 1px solid var(--glass-border);
+  backdrop-filter: blur(10px);
+  color: var(--text-main) !important;
+}
+
+/* Form Controls */
+.form-control,
+.form-select,
+.form-control:focus,
+.form-select:focus {
+  background: rgba(30, 41, 59, 0.7) !important;
+  border: 1px solid var(--glass-border) !important;
+  color: var(--text-main) !important;
+}
+
+.form-control:focus,
+.form-select:focus {
+  background: rgba(30, 41, 59, 0.9) !important;
+  border-color: var(--accent-green) !important;
+  box-shadow: 0 0 0 0.25rem rgba(14, 165, 233, 0.25) !important;
+}
+
+/* Form Placeholders */
+::placeholder {
+  color: var(--text-muted) !important;
+}
+
+/* Utilities overrides */
+.bg-light,
+.bg-white,
+.bg-dark {
+  background-color: transparent !important;
+}
+
+.text-primary {
+  color: var(--accent-green) !important;
+}
+
+.text-success {
+  color: #34d399 !important;
+}
+
+.text-info {
+  color: #38bdf8 !important;
+}
+
+.border-primary {
+  border-color: var(--accent-green) !important;
+}
+
+.border-bottom {
+  border-bottom-color: var(--glass-border) !important;
+}
+
+.list-group-item {
+  color: var(--text-main);
+  background: transparent !important;
+  border-color: var(--glass-border) !important;
+}
+
+/* Header Override */
+header[style*="background: linear-gradient"] {
+  background: transparent !important;
+  border-bottom: 1px solid var(--glass-border);
+  backdrop-filter: blur(8px);
+}
