@@ -1,77 +1,149 @@
 :root {
-  --bg-dark-1: #0f172a;
-  /* Koyu lacivert/gri */
-  --bg-dark-2: #334155;
-  /* Daha açık gri/mavi */
-  --accent-purple: #8b5cf6;
-  --accent-green: #0ea5e9;
-  /* Canlı mavi */
-  --text-main: #f8fafc;
-  /* Beyaz metin */
-  --text-muted: #cbd5e1;
-  /* Açık gri metin */
-  --glass-bg: rgba(15, 23, 42, 0.7);
-  /* Koyu yarı saydam */
-  --glass-border: rgba(255, 255, 255, 0.15);
-  /* Hafif beyaz kenarlık */
+  --bg-dark-1: #1e2d40;
+  /* Derin deniz mavisi-gri */
+  --bg-dark-2: #3d5a7a;
+  /* Açık çelik mavisi */
+  --accent-purple: #90b4d4;
+  /* Pastel mavi vurgu */
+  --accent-green: #60a3d9;
+  /* Canlı soğuk mavi */
+  --text-main: #f0f6ff;
+  /* Hafif mavimsi beyaz metin */
+  --text-muted: #b8d0e8;
+  /* Soğuk açık gri-mavi metin */
+  --glass-bg: rgba(30, 52, 80, 0.78);
+  /* Koyu mavi yarı saydam */
+  --glass-border: rgba(144, 180, 212, 0.20);
+  /* Soğuk mavi kenarlık */
 }
 
-/* Ana Sayfa Teması (Varsayılan - Lacivert/Mavi) */
-body.theme-index {
-  /* Kök değişkenleri kullanır */
-}
-
-/* Şehrim Teması (Zümrüt/Orman Yeşili) */
-body.theme-sehrim {
-  --bg-dark-1: #b3bab8;
-  --bg-dark-2: #494e4e;
-  --accent-purple: #f3f3f3;
-  --accent-green: #145843;
-  --glass-bg: rgba(6, 78, 59, 0.7);
-}
-
-/* Özgeçmiş Teması (Koyu Mor/Çivit) */
+/* Özgeçmiş Teması (Nötr Gri, İçinde Az Mavi) */
 body.theme-ozgecmis {
-  --bg-dark-1: #312e81;
-  --bg-dark-2: #4c1d95;
-  --accent-purple: #d946ef;
-  --accent-green: #8b5cf6;
-  --glass-bg: rgba(49, 46, 129, 0.7);
+  --bg-dark-1: #52585f;
+  /* Koyu nötr gri */
+  --bg-dark-2: #ccd0d3;
+  /* Açık nötr gri */
+  --accent-purple: #80a5be;
+  /* Pastel mavi vurgu */
+  --accent-green: #103047;
+  /* Mavi vurgu */
+  --text-main: #f2f4f6;
+  /* Açık gri-beyaz metin */
+  --text-muted: #c8cfd6;
+  /* Soluk gri metin */
+  --glass-bg: rgba(65, 72, 80, 0.68);
+  /* Koyu gri yarı saydam kart */
+  --glass-border: rgba(255, 255, 255, 0.47);
+  /* Hafif gri kenarlık */
 }
 
-/* İlgi Alanlarım Teması (Koyu Kırmızı/Turuncu) */
+
+
+body.theme-sehrim {
+  --bg-dark-1: #3d4a3e;
+  /* Koyu orman grisi */
+  --bg-dark-2: #5a6b5b;
+  /* Orta orman grisi */
+  --accent-purple: #b7c4b8;
+  /* Açık yeşilimsi gri */
+  --accent-green: #8fa893;
+  /* Yumuşak yeşil-gri */
+  --glass-bg: rgba(55, 70, 56, 0.80);
+}
+
+
+/* İlgi Alanlarım Teması (Koyu Gri) */
 body.theme-ilgialanlarim {
-  --bg-dark-1: #450a0a;
-  --bg-dark-2: #7c2d12;
-  --accent-purple: #f43f5e;
-  --accent-green: #f97316;
-  --glass-bg: rgba(69, 10, 10, 0.7);
+  --bg-dark-1: #1a202c;
+  /* Çok koyu gri */
+  --bg-dark-2: #2d3748;
+  /* Koyu gri */
+  --accent-purple: #a0aec0;
+  /* Açık gri vurgu */
+  --accent-green: #718096;
+  /* Orta gri vurgu */
+  --glass-bg: rgba(26, 32, 44, 0.85);
 }
 
-/* İletişim Teması (Koyu Indigo/Gece Mavisi) */
+/* İletişim Teması (Soğuk Gri) */
 body.theme-iletisim {
-  --bg-dark-1: #0f172a;
-  --bg-dark-2: #1e1b4b;
-  --accent-purple: #38bdf8;
-  --accent-green: #6366f1;
-  --glass-bg: rgba(15, 23, 42, 0.7);
+  --bg-dark-1: #263244;
+  /* Gece mavisi-gri */
+  --bg-dark-2: #3f5068;
+  /* Orta koyu gri-mavi */
+  --accent-purple: #90a8c3;
+  /* Açık soğuk gri */
+  --accent-green: #6b8aaa;
+  /* Gri-mavi vurgu */
+  --glass-bg: rgba(38, 50, 68, 0.82);
 }
 
-/* Giriş Yap Teması (Derin Deniz/Teal) */
+/* Giriş Yap Teması (Çelik Gri) */
 body.theme-login {
-  --bg-dark-1: #083344;
-  --bg-dark-2: #115e59;
-  --accent-purple: #06b6d4;
-  --accent-green: #14b8a6;
-  --glass-bg: rgba(8, 51, 68, 0.7);
+  --bg-dark-1: #2c3e50;
+  /* Çelik gri */
+  --bg-dark-2: #485b70;
+  /* Açık çelik gri */
+  --accent-purple: #435871;
+  /* Soğuk açık gri */
+  --accent-green: #7a9ab8;
+  /* Çelik gri vurgu */
+  --glass-bg: rgba(44, 62, 80, 0.82);
 }
 
 body {
-  background: linear-gradient(135deg, var(--bg-dark-1) 0%, var(--bg-dark-2) 100%);
+  background: linear-gradient(160deg,
+      var(--bg-dark-1) 0%,
+      var(--bg-dark-2) 55%,
+      color-mix(in srgb, var(--bg-dark-1) 60%, var(--bg-dark-2)) 100%);
   background-attachment: fixed;
   color: var(--text-main);
   min-height: 100vh;
   transition: background 0.5s ease;
+}
+
+/* Hakkinda sayfasi - Header ozel gradient */
+body.theme-index header.glass-panel {
+  background: linear-gradient(135deg,
+      rgba(30, 45, 64, 0.90) 0%,
+      rgba(61, 90, 122, 0.85) 50%,
+      rgba(96, 163, 217, 0.70) 100%) !important;
+  border-bottom: 1px solid rgba(144, 180, 212, 0.30);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+}
+
+/* Özgeçmiş açık tema — navbar açık arka plana uyumlu */
+body.theme-ozgecmis .navbar {
+  background: rgba(90, 115, 140, 0.90) !important;
+  border-bottom: 1px solid rgba(180, 210, 235, 0.25);
+}
+
+body.theme-ozgecmis .navbar-brand,
+body.theme-ozgecmis .nav-link {
+  color: #f0f4f8 !important;
+}
+
+body.theme-ozgecmis .nav-link:hover,
+body.theme-ozgecmis .nav-link.active {
+  color: #b8d4f0 !important;
+}
+
+/* Özgeçmiş açık tema — başlık ve metin renkleri */
+body.theme-ozgecmis h1,
+body.theme-ozgecmis h2,
+body.theme-ozgecmis h3,
+body.theme-ozgecmis h4 {
+  color: #f0f4f8 !important;
+}
+
+body.theme-ozgecmis .card-title {
+  color: #f0f4f8 !important;
+}
+
+body.theme-ozgecmis footer {
+  background: rgba(90, 115, 140, 0.90) !important;
+  color: #f0f4f8 !important;
 }
 
 /* Typography Overrides */
@@ -267,4 +339,38 @@ header[style*="background: linear-gradient"] {
   background: transparent !important;
   border-bottom: 1px solid var(--glass-border);
   backdrop-filter: blur(8px);
+}
+
+/* =========================================
+   Mobil / Responsive Düzenlemeler
+   ========================================= */
+@media (max-width: 768px) {
+
+  /* Başlık boyutlarını mobilde küçült */
+  .display-4 {
+    font-size: 2rem !important;
+  }
+
+  /* Profil fotoğrafını mobilde biraz küçült */
+  header img {
+    width: 120px !important;
+    height: 120px !important;
+  }
+
+  /* Kartların ve panellerin iç boşluklarını (padding) daralt */
+  .glass-panel,
+  .card {
+    padding: 1.25rem !important;
+  }
+
+  /* Mobilde genel boşlukları ayarla */
+  .my-5 {
+    margin-top: 2rem !important;
+    margin-bottom: 2rem !important;
+  }
+
+  .py-5 {
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+  }
 }
