@@ -28,53 +28,123 @@
       </div>
     </nav>
 
-    <main class="container mt-5">
-      <header class="text-center mb-5">
-        <h1 class="display-4 text-success">Karadeniz'in İncisi: Trabzon</h1>
-        <p class="lead">Nüfusu 800 bini aşan, eşsiz doğası ve binlerce yıllık tarihiyle büyüleyen şehrimiz.</p>
+    <main class="container mt-5 mb-5">
+      <!-- 1. Şehir Tanıtımı -->
+      <header class="mb-5 glass-panel p-5 rounded-4 shadow text-center border-0">
+        <h1 class="display-4 text-success fw-bold mb-3">Karadeniz'in İncisi: Trabzon</h1>
+        <p class="lead mb-4 px-md-5">
+          Trabzon, 824 bini aşan nüfusuyla Karadeniz Bölgesi'nin en kalabalık ve en önemli şehirlerinden biridir. Yeşilin ve mavinin her tonunu barındıran bu eşsiz şehir, binlerce yıllık tarihi, zengin kültürü ve doyumsuz manzaralarıyla ziyaretçilerini büyüler.
+        </p>
+        <div class="row text-start mt-5">
+          <div class="col-md-6 mb-4 mb-md-0 px-md-4">
+            <h4 class="text-success border-bottom border-success pb-2 mb-3"><i class="fw-bold">ℹ️</i> Hızlı Bilgiler</h4>
+            <ul class="list-unstyled fs-5">
+              <li class="mb-2"><strong>👥 Nüfus:</strong> Yaklaşık 824,000</li>
+              <li class="mb-2"><strong>📍 Bölge:</strong> Doğu Karadeniz</li>
+              <li class="mb-2"><strong>🚗 Plaka Kodu:</strong> 61</li>
+              <li class="mb-2"><strong>⚽ Takım:</strong> Trabzonspor</li>
+            </ul>
+          </div>
+          <div class="col-md-6 px-md-4">
+            <h4 class="text-success border-bottom border-success pb-2 mb-3"><i class="fw-bold">🧭</i> Gezilecek Başlıca Yerler</h4>
+            <ul class="list-unstyled fs-5">
+              <li class="mb-2">🌲 Uzungöl ve Haldizen Yaylası</li>
+              <li class="mb-2">🏛️ Sümela Manastırı ve Altındere Vadisi</li>
+              <li class="mb-2">🕌 Trabzon Ayasofya Camii</li>
+              <li class="mb-2">⛰️ Çal Mağarası ve Boztepe Manzarası</li>
+            </ul>
+          </div>
+        </div>
       </header>
 
-      <section id="slider" class="mb-5 shadow-sm">
-        <div id="trabzonCarousel" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-inner rounded">
-            <!-- Resim 1 (tıklanabilir) -->
+      <!-- 2. Tıklanabilir Slider (En az 4 Resim) -->
+      <section id="slider" class="mb-5">
+        <div class="text-center mb-4">
+          <h2 class="text-success border-bottom border-success pb-2 d-inline-block">Şehirden Kareler</h2>
+          <p class="text-muted">Görselleri tam boyutta görmek için üzerlerine tıklayabilirsiniz.</p>
+        </div>
+        
+        <div id="trabzonCarousel" class="carousel slide shadow-lg rounded-4 overflow-hidden" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <!-- Resim 1 -->
             <div class="carousel-item active">
               <a href="img/trabzon1.jpg" target="_blank">
-                <img src="img/trabzon1.jpg" class="d-block w-100" alt="Uzungöl Manzarası" style="height: 500px; object-fit: cover" />
+                <img src="img/trabzon1.jpg" class="d-block w-100" alt="Uzungöl Manzarası" style="height: 550px; object-fit: cover" />
               </a>
-              <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
-                <h5>Uzungöl</h5>
-                <p>Doğanın kalbinde, çam ormanlarıyla çevrili doğa harikası.</p>
+              <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 rounded p-3">
+                <h5 class="text-white mb-0">Uzungöl'ün Doğal Güzelliği</h5>
               </div>
             </div>
             <!-- Resim 2 -->
             <div class="carousel-item">
               <a href="img/trabzon2.jpg" target="_blank">
-                <img src="img/trabzon2.jpg" class="d-block w-100" alt="Çal Mağarası" style="height: 500px; object-fit: cover" />
+                <img src="img/trabzon2.jpg" class="d-block w-100" alt="Çal Mağarası" style="height: 550px; object-fit: cover" />
               </a>
-              <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
-                <h5>Çal Mağarası</h5>
-                <p>Dünyanın en uzun 2. mağarası olan bu eşsiz doğa harikası, şelalesi ve göletleriyle büyülüyor.</p>
+              <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 rounded p-3">
+                <h5 class="text-white mb-0">Gizemli Çal Mağarası</h5>
               </div>
             </div>
             <!-- Resim 3 -->
             <div class="carousel-item">
               <a href="img/trabzon3.jpg" target="_blank">
-                <img src="img/trabzon3.jpg" class="d-block w-100" alt="Ayasofya Camii" style="height: 500px; object-fit: cover" />
+                <img src="img/trabzon3.jpg" class="d-block w-100" alt="Ayasofya Camii" style="height: 550px; object-fit: cover" />
               </a>
-              <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
-                <h5>Trabzon Ayasofya Camii</h5>
-                <p>Geç Bizans kiliselerinin en güzel örneklerinden biri.</p>
+              <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 rounded p-3">
+                <h5 class="text-white mb-0">Tarihi Ayasofya Camii</h5>
               </div>
             </div>
             <!-- Resim 4 -->
             <div class="carousel-item">
               <a href="img/trabzon4.webp" target="_blank">
-                <img src="img/trabzon4.webp" class="d-block w-100" alt="Trabzon Yaylaları" style="height: 500px; object-fit: cover" />
+                <img src="img/trabzon4.webp" class="d-block w-100" alt="Trabzon Yaylaları" style="height: 550px; object-fit: cover" />
               </a>
-              <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
-                <h5>Yemyeşil Yaylalar</h5>
-                <p>Hıdırnebi ve Sis Dağı gibi oksijen deposu yaylalarımız.</p>
+              <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 rounded p-3">
+                <h5 class="text-white mb-0">Yemyeşil Yaylalarımız</h5>
+              </div>
+            </div>
+            <!-- Resim 5 -->
+            <div class="carousel-item">
+              <a href="img/trabzon5.jpg" target="_blank">
+                <img src="img/trabzon5.jpg" class="d-block w-100" alt="Trabzon Manzarası 1" style="height: 550px; object-fit: cover" />
+              </a>
+              <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 rounded p-3">
+                <h5 class="text-white mb-0">Eşsiz Doğasıyla Trabzon</h5>
+              </div>
+            </div>
+            <!-- Resim 6 -->
+            <div class="carousel-item">
+              <a href="img/trabzon6.jpg" target="_blank">
+                <img src="img/trabzon6.jpg" class="d-block w-100" alt="Trabzon Manzarası 2" style="height: 550px; object-fit: cover" />
+              </a>
+              <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 rounded p-3">
+                <h5 class="text-white mb-0">Tarihi Dokusu</h5>
+              </div>
+            </div>
+            <!-- Resim 7 -->
+            <div class="carousel-item">
+              <a href="img/trabzon7.jpg" target="_blank">
+                <img src="img/trabzon7.jpg" class="d-block w-100" alt="Trabzon Manzarası 3" style="height: 550px; object-fit: cover" />
+              </a>
+              <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 rounded p-3">
+                <h5 class="text-white mb-0">Karadeniz'in Güzelliği</h5>
+              </div>
+            </div>
+            <!-- Resim 8 -->
+            <div class="carousel-item">
+              <a href="img/trabzon8.webp" target="_blank">
+                <img src="img/trabzon8.webp" class="d-block w-100" alt="Trabzon Manzarası 4" style="height: 550px; object-fit: cover" />
+              </a>
+              <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 rounded p-3">
+                <h5 class="text-white mb-0">Şehir ve Doğa İç İçe</h5>
+              </div>
+            </div>
+            <!-- Resim 9 -->
+            <div class="carousel-item">
+              <a href="img/trabzon9.webp" target="_blank">
+                <img src="img/trabzon9.webp" class="d-block w-100" alt="Trabzon Manzarası 5" style="height: 550px; object-fit: cover" />
+              </a>
+              <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 rounded p-3">
+                <h5 class="text-white mb-0">Yaylaların Huzuru</h5>
               </div>
             </div>
           </div>
@@ -89,21 +159,43 @@
         </div>
       </section>
 
-      <hr class="my-5" />
-
-      <section id="mirasimiz" class="mb-5">
-        <div class="row align-items-center">
-          <div class="col-md-5 mb-4 mb-md-0">
-            <img src="img/sumela.jpg" class="img-fluid rounded shadow" alt="Sümela Manastırı" />
+      <!-- 3. Mirasımız ve Takımımız -->
+      <section id="miras-ve-takim" class="mb-5 mt-5">
+        <h2 class="text-center text-success mb-5 border-bottom border-success pb-2 d-inline-block mx-auto d-flex justify-content-center">Değerlerimiz</h2>
+        
+        <div class="row g-4">
+          <!-- Kültürel Miras -->
+          <div class="col-lg-6">
+            <div class="card h-100 shadow-lg border-0 rounded-4 overflow-hidden">
+              <img src="img/sumela.jpg" class="card-img-top" alt="Sümela Manastırı" style="height: 300px; object-fit: cover;">
+              <div class="card-body p-5">
+                <h3 class="card-title text-success mb-3 fw-bold">Kültürel Mirasımız: Sümela Manastırı</h3>
+                <p class="card-text text-muted" style="font-size: 1.1rem; line-height: 1.8;">
+                  Maçka ilçesindeki Altındere Vadisi'ne hakim Karadağ'ın eteklerinde sarp bir kayalık üzerine kurulan Sümela Manastırı, Trabzon'un ve Türkiye'nin en önemli kültürel miraslarından biridir.
+                </p>
+                <p class="card-text text-muted" style="font-size: 1.1rem; line-height: 1.8;">
+                  Halk arasında "Meryem Ana" adıyla da bilinen manastır, vadiden yaklaşık 300 metre yükseklikte yer almaktadır. Eşsiz freskleri, su kemerleri, kütüphanesi ve öğrenci odalarıyla mimari bir şaheser olan bu yapı, yüzyıllar boyunca bölgenin dini merkezi olmuştur.
+                </p>
+              </div>
+            </div>
           </div>
-          <div class="col-md-7">
-            <h2 class="text-success border-bottom border-success pb-2">Kültürel Mirasımız: Sümela Manastırı</h2>
-            <p class="mt-3">
-              Maçka ilçesindeki Altındere Vadisi'ne hakim Karadağ'ın eteklerinde sarp bir kayalık üzerine kurulan Sümela Manastırı, Trabzon'un ve Türkiye'nin en önemli kültürel miraslarından biridir.
-            </p>
-            <p>
-              Halk arasında "Meryem Ana" adıyla da bilinen manastır, vadiden yaklaşık 300 metre yükseklikte yer almaktadır. Eşsiz freskleri, su kemerleri, kütüphanesi ve öğrenci odalarıyla mimari bir şaheser olan bu yapı, yüzyıllar boyunca bölgenin dini ve kültürel merkezi olmuştur.
-            </p>
+
+          <!-- Takımımız -->
+          <div class="col-lg-6">
+            <div class="card h-100 shadow-lg border-0 rounded-4 overflow-hidden" style="background: linear-gradient(135deg, #871c30 0%, #1783b9 100%);">
+              <div class="card-body p-5 d-flex flex-column justify-content-center align-items-center text-center">
+                <div class="mb-4 bg-white rounded-circle shadow-lg d-flex align-items-center justify-content-center" style="width: 140px; height: 140px; border: 5px solid rgba(255,255,255,0.2);">
+                  <h1 class="m-0" style="color: #871c30; font-weight: 900; font-size: 3.5rem;">61</h1>
+                </div>
+                <h3 class="card-title mb-4 fw-bold text-white fs-2">Şehrin Gururu: Trabzonspor</h3>
+                <p class="card-text text-white" style="font-size: 1.15rem; line-height: 1.8; opacity: 0.95;">
+                  Trabzon şehri dendiğinde akla ilk gelen değerlerden biri şüphesiz Trabzonspor'dur. 1967 yılında kurulan kulüp, İstanbul hegemonyasını yıkan ilk Anadolu takımı olarak Türk futbol tarihine adını altın harflerle yazdırmıştır.
+                </p>
+                <p class="card-text mt-3 text-white" style="font-size: 1.15rem; line-height: 1.8; opacity: 0.85;">
+                  Bordo-Mavili renkleriyle <b>"Karadeniz Fırtınası"</b> lakabını alan takım, şehrin tutkusu, heyecanı ve en büyük birleştirici gücüdür. Trabzon'da futbol sadece bir spor değil, köklü bir yaşam biçimidir.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>

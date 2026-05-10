@@ -23,9 +23,9 @@ body.theme-ozgecmis {
   /* Koyu nötr gri */
   --bg-dark-2: #ccd0d3;
   /* Açık nötr gri */
-  --accent-purple: #80a5be;
+  --accent-purple: #383a3b;
   /* Pastel mavi vurgu */
-  --accent-green: #103047;
+  --accent-green: #a4a4a4;
   /* Mavi vurgu */
   --text-main: #f2f4f6;
   /* Açık gri-beyaz metin */
@@ -33,22 +33,29 @@ body.theme-ozgecmis {
   /* Soluk gri metin */
   --glass-bg: rgba(65, 72, 80, 0.68);
   /* Koyu gri yarı saydam kart */
-  --glass-border: rgba(255, 255, 255, 0.47);
-  /* Hafif gri kenarlık */
+  --glass-border: rgba(160, 170, 180, 0.45);
+  /* Şık gri kenarlık */
 }
 
 
 
 body.theme-sehrim {
-  --bg-dark-1: #3d4a3e;
-  /* Koyu orman grisi */
-  --bg-dark-2: #5a6b5b;
-  /* Orta orman grisi */
-  --accent-purple: #b7c4b8;
-  /* Açık yeşilimsi gri */
-  --accent-green: #8fa893;
-  /* Yumuşak yeşil-gri */
-  --glass-bg: rgba(55, 70, 56, 0.80);
+  --bg-dark-1: #e1c55e;
+  /* Zeytuni / Yosun yeşili-kahvesi (Sonbahar) */
+  --bg-dark-2: #2b221a;
+  /* Koyu toprak kahvesi */
+  --accent-purple: #c48233;
+  /* Kuru yaprak sarısı / hardal */
+  --accent-green: #2c1c04;
+  /* Koyu çam mavisi/yeşili */
+  --text-main: #f5eedf;
+  /* Sıcak kırık krem */
+  --text-muted: #c4baac;
+  /* Soluk bej-kahve */
+  --glass-bg: rgba(20, 16, 12, 0.72);
+  /* Koyu espresso/siyah — kartların daha temiz ve nötr durması için */
+  --glass-border: rgba(196, 130, 51, 0.20);
+  /* Hafif hardal/bakır kenarlık */
 }
 
 
@@ -115,8 +122,8 @@ body.theme-index header.glass-panel {
 
 /* Özgeçmiş açık tema — navbar açık arka plana uyumlu */
 body.theme-ozgecmis .navbar {
-  background: rgba(90, 115, 140, 0.90) !important;
-  border-bottom: 1px solid rgba(180, 210, 235, 0.25);
+  background: rgba(55, 62, 68, 0.95) !important;
+  border-bottom: 1px solid rgba(160, 170, 180, 0.25);
 }
 
 body.theme-ozgecmis .navbar-brand,
@@ -126,7 +133,7 @@ body.theme-ozgecmis .nav-link {
 
 body.theme-ozgecmis .nav-link:hover,
 body.theme-ozgecmis .nav-link.active {
-  color: #b8d4f0 !important;
+  color: #c8cfd6 !important;
 }
 
 /* Özgeçmiş açık tema — başlık ve metin renkleri */
@@ -142,7 +149,7 @@ body.theme-ozgecmis .card-title {
 }
 
 body.theme-ozgecmis footer {
-  background: rgba(90, 115, 140, 0.90) !important;
+  background: rgba(55, 62, 68, 0.95) !important;
   color: #f0f4f8 !important;
 }
 
