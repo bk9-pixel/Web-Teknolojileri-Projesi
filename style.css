@@ -59,43 +59,76 @@ body.theme-sehrim {
 }
 
 
-/* İlgi Alanlarım Teması (Koyu Gri) */
+/* İlgi Alanlarım Teması (Siyah/Kırmızı) */
 body.theme-ilgialanlarim {
-  --bg-dark-1: #1a202c;
-  /* Çok koyu gri */
-  --bg-dark-2: #2d3748;
-  /* Koyu gri */
-  --accent-purple: #a0aec0;
-  /* Açık gri vurgu */
-  --accent-green: #718096;
-  /* Orta gri vurgu */
-  --glass-bg: rgba(26, 32, 44, 0.85);
+  --bg-dark-1: #201115;
+  /* Koyu kırmızı/siyah arka plan */
+  --bg-dark-2: #c22618;
+  /* Kırmızı arka plan geçişi */
+  --accent-purple: #000000;
+  /* Siyah vurgu */
+  --accent-green: #ff734c;
+  /* Kırmızı vurgu */
+  --text-main: #ffffff;
+  /* Genel metin beyaz */
+  --text-muted: #ffcccc;
+  /* Alt metinler açık kırmızımsı */
+  --glass-bg: rgba(214, 11, 11, 0.854);
+  /* Siyahımsı kart arka planı */
+  --glass-border: rgba(248, 29, 9, 0.4);
+  /* Kırmızımsı kart kenarlığı */
+}
+
+/* İlgi alanlarım başlık yazısı siyah-kırmızı gradient */
+body.theme-ilgialanlarim h1.text-primary {
+  background: linear-gradient(45deg, #ff1a1a, #000000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* İlgi alanlarım Footer uyumu */
+body.theme-ilgialanlarim footer {
+  background: linear-gradient(90deg, #150505, #3a0000) !important;
+  border-top: 2px solid #c22618 !important;
+}
+
+body.theme-ilgialanlarim footer p {
+  background: linear-gradient(45deg, #ff4d4d, #ffffff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 600;
 }
 
 /* İletişim Teması (Soğuk Gri) */
 body.theme-iletisim {
-  --bg-dark-1: #263244;
+  --bg-dark-1: #31e68e;
   /* Gece mavisi-gri */
-  --bg-dark-2: #3f5068;
+  --bg-dark-2: #044c64;
   /* Orta koyu gri-mavi */
-  --accent-purple: #90a8c3;
+  --accent-purple: #009650;
   /* Açık soğuk gri */
-  --accent-green: #6b8aaa;
+  --accent-green: #004f5d;
   /* Gri-mavi vurgu */
-  --glass-bg: rgba(38, 50, 68, 0.82);
+  --glass-bg: rgba(40, 61, 94, 0.82);
 }
 
-/* Giriş Yap Teması (Çelik Gri) */
+/* Giriş Yap Teması (Gece İndigosu ve Pembe) */
 body.theme-login {
-  --bg-dark-1: #2c3e50;
-  /* Çelik gri */
-  --bg-dark-2: #485b70;
-  /* Açık çelik gri */
-  --accent-purple: #435871;
-  /* Soğuk açık gri */
-  --accent-green: #7a9ab8;
-  /* Çelik gri vurgu */
-  --glass-bg: rgba(44, 62, 80, 0.82);
+  --bg-dark-1: #1e1b4b;
+  /* Derin İndigo / Gece Mavisi */
+  --bg-dark-2: #be185d;
+  /* Canlı Pembe / Gül Rengi */
+  --accent-purple: #f472b6;
+  /* Açık pembe vurgu */
+  --accent-green: #38bdf8;
+  /* Mavi/Camgöbeği vurgu (butonlar için iyi kontrast) */
+  --glass-bg: rgba(20, 15, 45, 0.65);
+  /* Yarı saydam koyu mor cam */
+  --glass-border: rgba(190, 24, 93, 0.4);
+  /* Pembe kenarlık */
 }
 
 body {
@@ -346,6 +379,55 @@ header[style*="background: linear-gradient"] {
   background: transparent !important;
   border-bottom: 1px solid var(--glass-border);
   backdrop-filter: blur(8px);
+}
+
+/* =========================================
+   Özgeçmiş Özel Bileşenleri (Timeline & Progress)
+   ========================================= */
+.timeline-container {
+  position: relative;
+  padding-left: 20px;
+}
+
+.timeline-item {
+  position: relative;
+  padding-bottom: 1.5rem;
+  border-left: 2px solid rgba(255, 255, 255, 0.1);
+  padding-left: 20px;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: -7px;
+  top: 5px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--accent-green);
+  box-shadow: 0 0 10px var(--accent-green);
+}
+
+.custom-progress {
+  background: linear-gradient(90deg, var(--accent-green), var(--accent-purple));
+  border-radius: 10px;
+}
+
+.custom-badge {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  color: var(--text-main);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.custom-badge:hover {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: var(--accent-green);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 /* =========================================

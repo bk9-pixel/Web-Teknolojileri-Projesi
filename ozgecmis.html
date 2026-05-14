@@ -31,69 +31,167 @@
 
     <main class="container mt-5 mb-5">
         <header class="mb-5 text-center">
-            <h1 class="display-5 text-primary">Özgeçmiş</h1>
+            <h1 class="display-4 text-primary fw-bold">Özgeçmiş</h1>
             <p class="lead text-muted">Kariyer hedefim, teknik becerilerim ve akademik yolculuğum.</p>
         </header>
 
-        <div class="row">
-            <!-- Profil Kartı (article) -->
-            <div class="col-lg-4 mb-4">
-                <article class="card shadow border-0 rounded-4 text-center p-4 h-100">
-                    <img src="img/su.jpeg" alt="Beyza Koyun" class="rounded-circle mx-auto mb-3 shadow-sm" style="width: 150px; height: 150px; object-fit: cover;">
-                    <h2 class="fw-bold h3">Beyza Koyun</h2>
-                    <p class="text-muted mb-4">Bilgisayar Mühendisliği Öğrencisi</p>
-                    <div class="text-start mt-4">
-                        <p><strong>Eğitim:</strong> Sakarya Üniversitesi</p>
-                        <p><strong>Sınıf:</strong> 1. Sınıf</p>
-                        <p><strong>Konum:</strong> Kocaeli / Trabzon</p>
-                    </div>
-                </article>
+        <div class="row g-4">
+            <!-- Profil Kartı (Sticky Sidebar) -->
+            <div class="col-lg-4">
+                <div class="position-sticky" style="top: 2rem;">
+                    <article class="glass-panel text-center p-4 h-100">
+                        <img src="img/su.jpeg" alt="Beyza Koyun" class="rounded-3 mx-auto mb-3 shadow" style="width: 160px; height: 160px; object-fit: cover; border: 3px solid var(--accent-green);">
+                        <h2 class="fw-bold h4 mt-2">Beyza Koyun</h2>
+                        <p class="text-primary fw-semibold mb-4">Bilgisayar Mühendisliği Öğrencisi</p>
+                        
+                        <div class="text-start mt-4 px-2">
+                            <div class="d-flex mb-3">
+                                <div class="me-3 fs-5">🎓</div>
+                                <div>
+                                    <div class="text-muted small">Eğitim</div>
+                                    <div class="fw-bold">Sakarya Üniversitesi</div>
+                                </div>
+                            </div>
+                            <div class="d-flex mb-3">
+                                <div class="me-3 fs-5">📚</div>
+                                <div>
+                                    <div class="text-muted small">Sınıf</div>
+                                    <div class="fw-bold">1. Sınıf</div>
+                                </div>
+                            </div>
+                            <div class="d-flex">
+                                <div class="me-3 fs-5">📍</div>
+                                <div>
+                                    <div class="text-muted small">Konum</div>
+                                    <div class="fw-bold">Kocaeli </div>
+                                </div>
+                            </div>
+                            <div class="d-flex mb-3">
+                                <div class="me-3 fs-5">📧</div>
+                                <div>
+                                    <div class="text-muted small">E-posta</div>
+                                    <div class="fw-bold">Koyunb9@gmail.com</div>
+                                </div>
+                            </div>
+                            <div class="d-flex mb-3">
+                                <div class="me-3 fs-5">🌐</div>
+                                <div>
+                                    <div class="text-muted small">GitHub</div>
+                                    <div class="fw-bold"><a href="https://github.com/bk9-pixel">Hesabım</a></div>
+                                </div>
+                            </div>
+                            <div class="d-flex mb-3">
+                                <div class="me-3 fs-5">🔗</div>
+                                <div>
+                                    <div class="text-muted small">LinkedIn</div>
+                                    <div class="fw-bold"><a href="https://www.linkedin.com/in/beyza-koyun-92264a38a/">Hesabım</a></div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </article>
+                </div>
             </div>
 
-            <!-- Detaylar (semantik bölümler) -->
+            <!-- Detaylar (İçerik Akışı) -->
             <div class="col-lg-8">
-                <!-- Kariyer Hedefi (section) -->
-                <section class="card shadow border-0 rounded-4 p-4 mb-4 border-start border-primary border-5">
-                    <h3 class="text-primary border-bottom pb-2 mb-3">Kariyer Hedefi & Vizyon</h3>
-                    <p class="lead" style="font-size: 1.1rem;">
-                        Yazılım dünyasındaki temel vizyonum, makine öğrenmesi ve yapay zeka teknolojilerini tıp dünyasıyla entegre ederek sağlık alanında yenilikçi çözümler üretmektir.
+                
+                <!-- Kariyer Hedefi -->
+                <section class="glass-panel p-4 mb-4 position-relative overflow-hidden">
+                    <h3 class="text-primary border-bottom pb-2 mb-4 d-inline-block">Kariyer Hedefi & Vizyon</h3>
+                    <p class="lead position-relative z-1" style="font-size: 1.15rem; line-height: 1.8;">
+                        Yazılım dünyasındaki temel vizyonum, <strong>makine öğrenmesi</strong> ve <strong>yapay zeka</strong> teknolojilerini tıp dünyasıyla entegre ederek sağlık alanında yenilikçi ve hayat kurtaran çözümler üretmektir.
                     </p>
                 </section>
 
-                <!-- Teknik Yetenekler (section) -->
-                <section class="row mb-4">
-                    <div class="col-md-6 mb-3 mb-md-0">
-                        <div class="card shadow border-0 rounded-4 p-4 h-100">
-                            <h3 class="text-primary border-bottom pb-2 mb-3">Teknik Yetenekler</h3>
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item bg-transparent border-0 px-0">⚙️ <strong>Programlama:</strong> C++, C#, Python</li>
-                                <li class="list-group-item bg-transparent border-0 px-0">🌐 <strong>Web:</strong> HTML5, CSS3, Bootstrap, JS, Vue.js</li>
-                                <li class="list-group-item bg-transparent border-0 px-0">🧠 <strong>Veri Analizi:</strong> Makine Öğrenmesi (Temel Düzey)</li>
-                            </ul>
-                        </div>
-                    </div>
+                <div class="row g-4 mb-4">
+                    <!-- Teknik Yetenekler (Progress Bars) -->
                     <div class="col-md-6">
-                        <div class="card shadow border-0 rounded-4 p-4 h-100">
-                            <h3 class="text-primary border-bottom pb-2 mb-3">Akademik Temel</h3>
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item bg-transparent border-0 px-0">📚 Nesneye Dayalı Programlama</li>
-                                <li class="list-group-item bg-transparent border-0 px-0">📚 Web Teknolojileri</li>
-                                <li class="list-group-item bg-transparent border-0 px-0">📚 Olasılık, İstatistik ve Lineer Cebir</li>
-                            </ul>
-                        </div>
-                    </div>
-                </section>
+                        <section class="glass-panel p-4 h-100">
+                            <h3 class="text-primary border-bottom pb-2 mb-4">Teknik Yetenekler</h3>
+                            
+                            <div class="mb-3">
+                                <div class="d-flex justify-content-between mb-1">
+                                    <span>C++, C#</span>
+                                </div>
+                                <div class="progress" style="height: 8px; background: rgba(255,255,255,0.1);">
+                                    <div class="progress-bar custom-progress" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
 
-                <!-- Hobiler (section) -->
-                <section class="card shadow border-0 rounded-4 p-4 mb-4">
-                    <h3 class="text-primary border-bottom pb-2 mb-3">Hobiler & İlgi Alanları</h3>
-                    <div class="d-flex flex-wrap gap-2">
-                        <span class="badge bg-secondary p-2 fs-6">Futbol Takibi</span>
-                        <span class="badge bg-secondary p-2 fs-6">Fitness & Egzersiz</span>
-                        <span class="badge bg-secondary p-2 fs-6">Üretken Yapay Zeka (Görsel Tasarım)</span>
-                        <span class="badge bg-secondary p-2 fs-6">TEKNOFEST Projeleri</span>
+                            <div class="mb-3">
+                                <div class="d-flex justify-content-between mb-1">
+                                    <span>Python</span>
+                                </div>
+                                <div class="progress" style="height: 8px; background: rgba(255,255,255,0.1);">
+                                    <div class="progress-bar custom-progress" role="progressbar" style="width: 65%;" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <div class="d-flex justify-content-between mb-1">
+                                    <span>HTML/CSS & JS</span>
+                                </div>
+                                <div class="progress" style="height: 8px; background: rgba(255,255,255,0.1);">
+                                    <div class="progress-bar custom-progress" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <div class="d-flex justify-content-between mb-1">
+                                    <span>Makine Öğrenmesi</span>
+                                    <span class="small text-muted">Temel</span>
+                                </div>
+                                <div class="progress" style="height: 8px; background: rgba(255,255,255,0.1);">
+                                    <div class="progress-bar custom-progress" role="progressbar" style="width: 40%;" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+
+                    <!-- Akademik Temel (Timeline) -->
+                    <div class="col-md-6">
+                        <section class="glass-panel p-4 h-100">
+                            <h3 class="text-primary border-bottom pb-2 mb-4">Akademik Temel</h3>
+                            
+                            <div class="timeline-container">
+                                <div class="timeline-item">
+                                    <div class="timeline-dot"></div>
+                                    <div class="timeline-content">
+                                        <h5 class="fw-bold mb-1">Nesneye Dayalı Programlama</h5>
+                                        <p class="text-muted small mb-0">Temel konseptler, sınıflar ve mimari tasarım.</p>
+                                    </div>
+                                </div>
+                                <div class="timeline-item">
+                                    <div class="timeline-dot"></div>
+                                    <div class="timeline-content">
+                                        <h5 class="fw-bold mb-1">Web Teknolojileri</h5>
+                                        <p class="text-muted small mb-0">Frontend geliştirme ve responsive tasarım ilkeleri.</p>
+                                    </div>
+                                </div>
+                                <div class="timeline-item border-0 pb-0">
+                                    <div class="timeline-dot"></div>
+                                    <div class="timeline-content">
+                                        <h5 class="fw-bold mb-1">Matematiksel Temeller</h5>
+                                        <p class="text-muted small mb-0">Olasılık, İstatistik ve Lineer Cebir (Yapay Zeka için altyapı).</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+
+                <!-- Hobiler -->
+                <section class="glass-panel p-4">
+                    <h3 class="text-primary border-bottom pb-2 mb-4">Hobiler & İlgi Alanları</h3>
+                    <div class="d-flex flex-wrap gap-3">
+                        <span class="custom-badge">⚽ Futbol Takibi</span>
+                        <span class="custom-badge">🏋️ Fitness & Egzersiz</span>
+                        <span class="custom-badge">🎨 Üretken Yapay Zeka (Görsel)</span>
+                        <span class="custom-badge">🚀 TEKNOFEST Projeleri</span>
                     </div>
                 </section>
+                
             </div>
         </div>
     </main>
