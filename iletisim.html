@@ -52,10 +52,12 @@
                   <div class="col-md-6">
                     <label for="isim" class="form-label fw-bold">Adınız</label>
                     <input type="text" class="form-control" id="isim" name="isim" v-model="isim" placeholder="Adınızı girin" />
+                    <span id="isimError" class="text-danger small fw-bold mt-1" :class="{ 'd-block': errors.isim, 'd-none': !errors.isim }">{{ errors.isim }}</span>
                   </div>
                   <div class="col-md-6 mt-3 mt-md-0">
                     <label for="soyisim" class="form-label fw-bold">Soyadınız</label>
                     <input type="text" class="form-control" id="soyisim" name="soyisim" v-model="soyisim" placeholder="Soyadınızı girin" />
+                    <span id="soyisimError" class="text-danger small fw-bold mt-1" :class="{ 'd-block': errors.soyisim, 'd-none': !errors.soyisim }">{{ errors.soyisim }}</span>
                   </div>
                 </div>
 
@@ -64,10 +66,12 @@
                   <div class="col-md-6">
                     <label for="email" class="form-label fw-bold">E-Posta Adresiniz</label>
                     <input type="email" class="form-control" id="email" name="email" v-model="email" placeholder="ornek@mail.com" />
+                    <span id="emailError" class="text-danger small fw-bold mt-1" :class="{ 'd-block': errors.email, 'd-none': !errors.email }">{{ errors.email }}</span>
                   </div>
                   <div class="col-md-6 mt-3 mt-md-0">
                     <label for="telefon" class="form-label fw-bold">Telefon Numaranız</label>
                     <input type="tel" class="form-control" id="telefon" name="telefon" v-model="telefon" placeholder="05XXXXXXXXX" maxlength="11" />
+                    <span id="telefonError" class="text-danger small fw-bold mt-1" :class="{ 'd-block': errors.telefon, 'd-none': !errors.telefon }">{{ errors.telefon }}</span>
                   </div>
                 </div>
 
@@ -78,6 +82,7 @@
                     <option value="" selected disabled>Lütfen bir şehir seçin...</option>
                     <option value="Adana">Adana</option><option value="Adıyaman">Adıyaman</option><option value="Afyonkarahisar">Afyonkarahisar</option><option value="Ağrı">Ağrı</option><option value="Aksaray">Aksaray</option><option value="Amasya">Amasya</option><option value="Ankara">Ankara</option><option value="Antalya">Antalya</option><option value="Ardahan">Ardahan</option><option value="Artvin">Artvin</option><option value="Aydın">Aydın</option><option value="Balıkesir">Balıkesir</option><option value="Bartın">Bartın</option><option value="Batman">Batman</option><option value="Bayburt">Bayburt</option><option value="Bilecik">Bilecik</option><option value="Bingöl">Bingöl</option><option value="Bitlis">Bitlis</option><option value="Bolu">Bolu</option><option value="Burdur">Burdur</option><option value="Bursa">Bursa</option><option value="Çanakkale">Çanakkale</option><option value="Çankırı">Çankırı</option><option value="Çorum">Çorum</option><option value="Denizli">Denizli</option><option value="Diyarbakır">Diyarbakır</option><option value="Düzce">Düzce</option><option value="Edirne">Edirne</option><option value="Elazığ">Elazığ</option><option value="Erzincan">Erzincan</option><option value="Erzurum">Erzurum</option><option value="Eskişehir">Eskişehir</option><option value="Gaziantep">Gaziantep</option><option value="Giresun">Giresun</option><option value="Gümüşhane">Gümüşhane</option><option value="Hakkâri">Hakkâri</option><option value="Hatay">Hatay</option><option value="Iğdır">Iğdır</option><option value="Isparta">Isparta</option><option value="İstanbul">İstanbul</option><option value="İzmir">İzmir</option><option value="Kahramanmaraş">Kahramanmaraş</option><option value="Karabük">Karabük</option><option value="Karaman">Karaman</option><option value="Kars">Kars</option><option value="Kastamonu">Kastamonu</option><option value="Kayseri">Kayseri</option><option value="Kırıkkale">Kırıkkale</option><option value="Kırklareli">Kırklareli</option><option value="Kırşehir">Kırşehir</option><option value="Kilis">Kilis</option><option value="Kocaeli">Kocaeli</option><option value="Konya">Konya</option><option value="Kütahya">Kütahya</option><option value="Malatya">Malatya</option><option value="Manisa">Manisa</option><option value="Mardin">Mardin</option><option value="Mersin">Mersin</option><option value="Muğla">Muğla</option><option value="Muş">Muş</option><option value="Nevşehir">Nevşehir</option><option value="Niğde">Niğde</option><option value="Ordu">Ordu</option><option value="Osmaniye">Osmaniye</option><option value="Rize">Rize</option><option value="Sakarya">Sakarya</option><option value="Samsun">Samsun</option><option value="Siirt">Siirt</option><option value="Sinop">Sinop</option><option value="Sivas">Sivas</option><option value="Şanlıurfa">Şanlıurfa</option><option value="Şırnak">Şırnak</option><option value="Tekirdağ">Tekirdağ</option><option value="Tokat">Tokat</option><option value="Trabzon">Trabzon</option><option value="Tunceli">Tunceli</option><option value="Uşak">Uşak</option><option value="Van">Van</option><option value="Yalova">Yalova</option><option value="Yozgat">Yozgat</option><option value="Zonguldak">Zonguldak</option>
                   </select>
+                  <span id="sehirError" class="text-danger small fw-bold mt-1" :class="{ 'd-block': errors.sehir, 'd-none': !errors.sehir }">{{ errors.sehir }}</span>
                 </div>
 
                 <!-- Cinsiyet -->
@@ -91,18 +96,21 @@
                     <input class="form-check-input" type="radio" name="cinsiyet" id="erkek" value="Erkek" v-model="cinsiyet" />
                     <label class="form-check-label" for="erkek">Erkek</label>
                   </div>
+                  <span id="cinsiyetError" class="text-danger small fw-bold mt-1" :class="{ 'd-block': errors.cinsiyet, 'd-none': !errors.cinsiyet }">{{ errors.cinsiyet }}</span>
                 </div>
 
                 <!-- Mesaj Alanı -->
                 <div class="mb-4">
                   <label for="mesaj" class="form-label fw-bold">Mesajınız</label>
                   <textarea class="form-control" id="mesaj" name="mesaj" rows="5" v-model="mesaj" placeholder="İletmek istediğiniz mesajı buraya yazın..."></textarea>
+                  <span id="mesajError" class="text-danger small fw-bold mt-1" :class="{ 'd-block': errors.mesaj, 'd-none': !errors.mesaj }">{{ errors.mesaj }}</span>
                 </div>
 
                 <!-- Checkbox (Sözleşme Onayı)-->
                 <div class="mb-4 form-check">
                   <input type="checkbox" class="form-check-input" id="onay" name="onay" v-model="onay" />
                   <label class="form-check-label text-muted" for="onay">Kişisel verilerimin işlenmesini onaylıyorum.</label>
+                  <span id="onayError" class="text-danger small fw-bold mt-1" :class="{ 'd-block': errors.onay, 'd-none': !errors.onay }">{{ errors.onay }}</span>
                 </div>
 
                 <!-- Butonlar -->
@@ -154,35 +162,48 @@
         const mesaj = document.getElementById("mesaj").value.trim();
         const onay = document.getElementById("onay").checked;
 
-        let hatalar = [];
+        // Önce tüm hata mesajlarını gizle
+        document.querySelectorAll('span[id$="Error"]').forEach(el => {
+          el.innerText = "";
+          el.classList.remove('d-block');
+          el.classList.add('d-none');
+        });
 
-        if (isim === "") hatalar.push("Adınızı girmeyi unuttunuz.");
-        if (soyisim === "") hatalar.push("Soyadınızı girmeyi unuttunuz.");
-        if (sehir === "") hatalar.push("Lütfen yaşadığınız şehri seçin.");
-        if (!cinsiyet) hatalar.push("Lütfen cinsiyetinizi belirtin.");
+        let hasError = false;
+
+        function setError(id, msg) {
+          const el = document.getElementById(id + "Error");
+          if(el) {
+            el.innerText = msg;
+            el.classList.remove('d-none');
+            el.classList.add('d-block');
+            hasError = true;
+          }
+        }
+
+        if (isim === "") setError("isim", "Adınızı girmeyi unuttunuz.");
+        if (soyisim === "") setError("soyisim", "Soyadınızı girmeyi unuttunuz.");
+        if (sehir === "") setError("sehir", "Lütfen yaşadığınız şehri seçin.");
+        if (!cinsiyet) setError("cinsiyet", "Lütfen cinsiyetinizi belirtin.");
 
         const emailSabloni = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         if (email === "") {
-          hatalar.push("E-posta adresinizi girmeyi unuttunuz.");
+          setError("email", "E-posta adresinizi girmeyi unuttunuz.");
         } else if (!emailSabloni.test(email)) {
-          hatalar.push("Lütfen geçerli bir e-posta adresi girin.");
+          setError("email", "Lütfen geçerli bir e-posta adresi girin.");
         }
 
-        // Sadece Rakam Kontrolü
         const telefonSabloni = /^[0-9]+$/;
         if (telefon === "") {
-          hatalar.push("Telefon numaranızı girmeyi unuttunuz.");
+          setError("telefon", "Telefon numaranızı girmeyi unuttunuz.");
         } else if (!telefonSabloni.test(telefon)) {
-          hatalar.push("Telefon numarası sadece rakamlardan oluşmalıdır.");
+          setError("telefon", "Telefon numarası sadece rakamlardan oluşmalıdır.");
         }
 
-        if (mesaj === "") hatalar.push("Mesaj alanını boş bırakamazsınız.");
+        if (mesaj === "") setError("mesaj", "Mesaj alanını boş bırakamazsınız.");
+        if (!onay) setError("onay", "Kişisel verilerinizin işlenmesini onaylamalısınız.");
 
-        if (!onay) hatalar.push("Kişisel verilerinizin işlenmesini onaylamalısınız.");
-
-        if (hatalar.length > 0) {
-          alert("[NATIVE JS KONTROLÜ] Lütfen eksikleri tamamlayın:\n\n- " + hatalar.join("\n- "));
-        } else {
+        if (!hasError) {
           document.getElementById("iletisimFormu").submit();
         }
       }
@@ -203,40 +224,53 @@
             cinsiyet: "",
             mesaj: "",
             onay: false,
+            errors: {
+              isim: "",
+              soyisim: "",
+              email: "",
+              telefon: "",
+              sehir: "",
+              cinsiyet: "",
+              mesaj: "",
+              onay: ""
+            }
           };
         },
         methods: {
           vueIleDenetle() {
-            let vueHatalar = [];
+            // Hataları sıfırla
+            for (let key in this.errors) {
+              this.errors[key] = "";
+            }
+            
+            let hasError = false;
 
-            if (!this.isim) vueHatalar.push("Adınızı girmeyi unuttunuz.");
-            if (!this.soyisim) vueHatalar.push("Soyadınızı girmeyi unuttunuz.");
+            if (!this.isim) { this.errors.isim = "Adınızı girmeyi unuttunuz."; hasError = true; }
+            if (!this.soyisim) { this.errors.soyisim = "Soyadınızı girmeyi unuttunuz."; hasError = true; }
 
             const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
             if (!this.email) {
-              vueHatalar.push("E-posta adresinizi girmeyi unuttunuz.");
+              this.errors.email = "E-posta adresinizi girmeyi unuttunuz."; hasError = true;
             } else if (!regex.test(this.email)) {
-              vueHatalar.push("Lütfen geçerli bir e-posta adresi girin.");
+              this.errors.email = "Lütfen geçerli bir e-posta adresi girin."; hasError = true;
             }
 
             // Sadece Rakam Kontrolü
             const telRegex = /^[0-9]+$/;
             if (!this.telefon) {
-              vueHatalar.push("Telefon numaranızı girmeyi unuttunuz.");
+              this.errors.telefon = "Telefon numaranızı girmeyi unuttunuz."; hasError = true;
             } else if (!telRegex.test(this.telefon)) {
-              vueHatalar.push("Telefon numarası sadece rakamlardan oluşmalıdır.");
+              this.errors.telefon = "Telefon numarası sadece rakamlardan oluşmalıdır."; hasError = true;
             }
 
-            if (!this.sehir) vueHatalar.push("Lütfen yaşadığınız şehri seçin.");
-            if (!this.cinsiyet) vueHatalar.push("Lütfen cinsiyetinizi belirtin.");
+            if (!this.sehir) { this.errors.sehir = "Lütfen yaşadığınız şehri seçin."; hasError = true; }
+            if (!this.cinsiyet) { this.errors.cinsiyet = "Lütfen cinsiyetinizi belirtin."; hasError = true; }
             
-            if (!this.mesaj) vueHatalar.push("Mesaj alanını boş bırakamazsınız.");
+            if (!this.mesaj) { this.errors.mesaj = "Mesaj alanını boş bırakamazsınız."; hasError = true; }
 
-            if (!this.onay) vueHatalar.push("Kişisel verilerinizin işlenmesini onaylamalısınız.");
+            if (!this.onay) { this.errors.onay = "Kişisel verilerinizin işlenmesini onaylamalısınız."; hasError = true; }
 
-            if (vueHatalar.length > 0) {
-              alert("[VUE.JS KONTROLÜ] Lütfen eksikleri tamamlayın:\n\n- " + vueHatalar.join("\n- "));
-            } else {
+            if (!hasError) {
               document.getElementById("iletisimFormu").submit();
             }
           },
@@ -249,6 +283,9 @@
             this.cinsiyet = "";
             this.mesaj = "";
             this.onay = false;
+            for (let key in this.errors) {
+              this.errors[key] = "";
+            }
           },
         },
       }).mount("#iletisimApp");
