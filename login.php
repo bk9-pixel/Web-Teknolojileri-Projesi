@@ -80,8 +80,25 @@
       </div>
     </main>
 
-    <footer class="text-center py-4 bg-dark text-white mt-auto border-top border-dark">
-      <p class="mb-0">&copy; 2026 Beyza Koyun - Tüm Hakları Saklıdır.</p>
+    <footer class="py-4 mt-auto footer-blue">
+        <div class="container text-center">
+            <div class="d-flex justify-content-center flex-wrap gap-4 mb-3">
+                <a href="mailto:Koyunb9@gmail.com" class="text-white text-decoration-none d-flex align-items-center gap-2 hover-opacity">
+                    <span class="fs-5">📧</span> <span>Koyunb9@gmail.com</span>
+                </a>
+                <a href="https://github.com/bk9-pixel" target="_blank" class="text-white text-decoration-none d-flex align-items-center gap-2 hover-opacity">
+                    <span class="fs-5">💻</span> <span>GitHub</span>
+                </a>
+                <a href="https://www.linkedin.com/in/beyza-koyun-92264a38a/" target="_blank" class="text-white text-decoration-none d-flex align-items-center gap-2 hover-opacity">
+                    <span class="fs-5">🔗</span> <span>LinkedIn</span>
+                </a>
+            </div>
+            <p class="mb-0 text-muted small">&copy; 2026 Beyza Koyun - Tüm Hakları Saklıdır.</p>
+        </div>
+        <style>
+            .hover-opacity { transition: opacity 0.3s ease; }
+            .hover-opacity:hover { opacity: 0.7; color: var(--accent-green) !important; }
+        </style>
     </footer>
 
     <!-- Bootstrap JS -->

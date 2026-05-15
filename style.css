@@ -1,82 +1,51 @@
 :root {
   --bg-dark-1: #1e2d40;
-  /* Derin deniz mavisi-gri */
   --bg-dark-2: #3d5a7a;
-  /* Açık çelik mavisi */
   --accent-purple: #90b4d4;
-  /* Pastel mavi vurgu */
   --accent-green: #60a3d9;
-  /* Canlı soğuk mavi */
   --text-main: #f0f6ff;
-  /* Hafif mavimsi beyaz metin */
   --text-muted: #b8d0e8;
-  /* Soğuk açık gri-mavi metin */
   --glass-bg: rgba(30, 52, 80, 0.78);
-  /* Koyu mavi yarı saydam */
   --glass-border: rgba(144, 180, 212, 0.20);
-  /* Soğuk mavi kenarlık */
+
 }
 
 /* Özgeçmiş Teması (Nötr Gri, İçinde Az Mavi) */
 body.theme-ozgecmis {
   --bg-dark-1: #52585f;
-  /* Koyu nötr gri */
   --bg-dark-2: #ccd0d3;
-  /* Açık nötr gri */
   --accent-purple: #383a3b;
-  /* Pastel mavi vurgu */
   --accent-green: #a4a4a4;
-  /* Mavi vurgu */
   --text-main: #f2f4f6;
-  /* Açık gri-beyaz metin */
   --text-muted: #c8cfd6;
-  /* Soluk gri metin */
   --glass-bg: rgba(65, 72, 80, 0.68);
-  /* Koyu gri yarı saydam kart */
   --glass-border: rgba(160, 170, 180, 0.45);
-  /* Şık gri kenarlık */
 }
 
 
 
 body.theme-sehrim {
   --bg-dark-1: #e1c55e;
-  /* Zeytuni / Yosun yeşili-kahvesi (Sonbahar) */
   --bg-dark-2: #2b221a;
-  /* Koyu toprak kahvesi */
   --accent-purple: #c48233;
-  /* Kuru yaprak sarısı / hardal */
   --accent-green: #2c1c04;
-  /* Koyu çam mavisi/yeşili */
   --text-main: #f5eedf;
-  /* Sıcak kırık krem */
   --text-muted: #c4baac;
-  /* Soluk bej-kahve */
   --glass-bg: rgba(20, 16, 12, 0.72);
-  /* Koyu espresso/siyah — kartların daha temiz ve nötr durması için */
   --glass-border: rgba(196, 130, 51, 0.20);
-  /* Hafif hardal/bakır kenarlık */
 }
 
 
 /* İlgi Alanlarım Teması (Siyah/Kırmızı) */
 body.theme-ilgialanlarim {
   --bg-dark-1: #201115;
-  /* Koyu kırmızı/siyah arka plan */
   --bg-dark-2: #c22618;
-  /* Kırmızı arka plan geçişi */
   --accent-purple: #000000;
-  /* Siyah vurgu */
   --accent-green: #ff734c;
-  /* Kırmızı vurgu */
   --text-main: #ffffff;
-  /* Genel metin beyaz */
   --text-muted: #ffcccc;
-  /* Alt metinler açık kırmızımsı */
   --glass-bg: rgba(214, 11, 11, 0.854);
-  /* Siyahımsı kart arka planı */
   --glass-border: rgba(248, 29, 9, 0.4);
-  /* Kırmızımsı kart kenarlığı */
 }
 
 /* İlgi alanlarım başlık yazısı siyah-kırmızı gradient */
@@ -105,30 +74,20 @@ body.theme-ilgialanlarim footer p {
 /* İletişim Teması (Soğuk Gri) */
 body.theme-iletisim {
   --bg-dark-1: #31e68e;
-  /* Gece mavisi-gri */
   --bg-dark-2: #044c64;
-  /* Orta koyu gri-mavi */
   --accent-purple: #009650;
-  /* Açık soğuk gri */
   --accent-green: #004f5d;
-  /* Gri-mavi vurgu */
   --glass-bg: rgba(40, 61, 94, 0.82);
 }
 
 /* Giriş Yap Teması (Gece İndigosu ve Pembe) */
 body.theme-login {
   --bg-dark-1: #1e1b4b;
-  /* Derin İndigo / Gece Mavisi */
   --bg-dark-2: #be185d;
-  /* Canlı Pembe / Gül Rengi */
   --accent-purple: #f472b6;
-  /* Açık pembe vurgu */
   --accent-green: #38bdf8;
-  /* Mavi/Camgöbeği vurgu (butonlar için iyi kontrast) */
   --glass-bg: rgba(20, 15, 45, 0.65);
-  /* Yarı saydam koyu mor cam */
   --glass-border: rgba(190, 24, 93, 0.4);
-  /* Pembe kenarlık */
 }
 
 body {
@@ -153,7 +112,7 @@ body.theme-index header.glass-panel {
   -webkit-backdrop-filter: blur(18px);
 }
 
-/* Özgeçmiş açık tema — navbar açık arka plana uyumlu */
+
 body.theme-ozgecmis .navbar {
   background: rgba(55, 62, 68, 0.95) !important;
   border-bottom: 1px solid rgba(160, 170, 180, 0.25);
@@ -290,7 +249,6 @@ h6 {
 
 .btn-outline-success {
   color: #34d399;
-  /* Daha açık yeşil */
   border-color: #34d399;
 }
 
@@ -313,10 +271,14 @@ h6 {
 
 /* Footer */
 footer {
-  background: rgba(15, 23, 42, 0.85) !important;
+  background: rgba(43, 34, 26, 0.85) !important;
   border-top: 1px solid var(--glass-border);
   backdrop-filter: blur(10px);
   color: var(--text-main) !important;
+}
+
+footer.footer-blue {
+  background: rgba(15, 23, 42, 0.85) !important;
 }
 
 /* Form Controls */

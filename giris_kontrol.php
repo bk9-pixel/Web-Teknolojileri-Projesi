@@ -34,7 +34,7 @@
                                 <h3>Giriş Başarılı</h3>
                             </div>
                             <div class="card-body text-center p-5">
-                                <h4 class="text-success mb-4">Hoşgeldin ' . $gelen_sifre . '</h4>
+                                <h4 class="text-success mb-4">Hoşgeldiniz ' . explode("@", $gelen_email)[0] . '</h4>
                                 <p class="text-muted">Öğrenci sistemine başarıyla giriş yaptınız. Yönlendiriliyorsunuz...</p>
                                 <a href="index.html" class="btn btn-outline-success mt-3 px-4">Ana Sayfaya Dön</a>
                             </div>

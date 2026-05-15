@@ -99,7 +99,7 @@
                   <textarea class="form-control" id="mesaj" name="mesaj" rows="5" v-model="mesaj" placeholder="İletmek istediğiniz mesajı buraya yazın..."></textarea>
                 </div>
 
-                <!-- Checkbox (Sözleşme Onayı) Eklendi -->
+                <!-- Checkbox (Sözleşme Onayı)-->
                 <div class="mb-4 form-check">
                   <input type="checkbox" class="form-check-input" id="onay" name="onay" v-model="onay" />
                   <label class="form-check-label text-muted" for="onay">Kişisel verilerimin işlenmesini onaylıyorum.</label>
@@ -118,8 +118,25 @@
       </div>
     </main>
 
-    <footer class="text-center py-4 bg-dark text-white mt-auto border-top border-dark">
-      <p class="mb-0">&copy; 2026 Beyza Koyun - Tüm Hakları Saklıdır.</p>
+    <footer class="py-4 mt-auto footer-blue">
+        <div class="container text-center">
+            <div class="d-flex justify-content-center flex-wrap gap-4 mb-3">
+                <a href="mailto:Koyunb9@gmail.com" class="text-white text-decoration-none d-flex align-items-center gap-2 hover-opacity">
+                    <span class="fs-5">📧</span> <span>Koyunb9@gmail.com</span>
+                </a>
+                <a href="https://github.com/bk9-pixel" target="_blank" class="text-white text-decoration-none d-flex align-items-center gap-2 hover-opacity">
+                    <span class="fs-5">💻</span> <span>GitHub</span>
+                </a>
+                <a href="https://www.linkedin.com/in/beyza-koyun-92264a38a/" target="_blank" class="text-white text-decoration-none d-flex align-items-center gap-2 hover-opacity">
+                    <span class="fs-5">🔗</span> <span>LinkedIn</span>
+                </a>
+            </div>
+            <p class="mb-0 text-muted small">&copy; 2026 Beyza Koyun - Tüm Hakları Saklıdır.</p>
+        </div>
+        <style>
+            .hover-opacity { transition: opacity 0.3s ease; }
+            .hover-opacity:hover { opacity: 0.7; color: var(--accent-green) !important; }
+        </style>
     </footer>
 
     <!-- Bootstrap JS -->
@@ -132,6 +149,8 @@
         const soyisim = document.getElementById("soyisim").value.trim();
         const email = document.getElementById("email").value.trim();
         const telefon = document.getElementById("telefon").value.trim();
+        const sehir = document.getElementById("sehir").value;
+        const cinsiyet = document.querySelector('input[name="cinsiyet"]:checked');
         const mesaj = document.getElementById("mesaj").value.trim();
         const onay = document.getElementById("onay").checked;
 
@@ -139,6 +158,8 @@
 
         if (isim === "") hatalar.push("Adınızı girmeyi unuttunuz.");
         if (soyisim === "") hatalar.push("Soyadınızı girmeyi unuttunuz.");
+        if (sehir === "") hatalar.push("Lütfen yaşadığınız şehri seçin.");
+        if (!cinsiyet) hatalar.push("Lütfen cinsiyetinizi belirtin.");
 
         const emailSabloni = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         if (email === "") {
@@ -206,6 +227,9 @@
               vueHatalar.push("Telefon numarası sadece rakamlardan oluşmalıdır.");
             }
 
+            if (!this.sehir) vueHatalar.push("Lütfen yaşadığınız şehri seçin.");
+            if (!this.cinsiyet) vueHatalar.push("Lütfen cinsiyetinizi belirtin.");
+            
             if (!this.mesaj) vueHatalar.push("Mesaj alanını boş bırakamazsınız.");
 
             if (!this.onay) vueHatalar.push("Kişisel verilerinizin işlenmesini onaylamalısınız.");
